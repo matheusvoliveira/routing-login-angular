@@ -1,0 +1,17 @@
+<div class="login-container mt-5">
+    <form class="row g-3">
+        <div class="form-group class='col-md-6 ">
+            <h1>Login </h1>
+        <label for="user">User</label>
+        <input type="text" class="form-control" name="user"  placeholder="Enter user" [(ngModel)]="user">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password"  placeholder="Password" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error">{{ errorMsg}}</div>
+            <button type="submit" class="btn btn-primary" (click)="login()">Submit</button>
+        </div>
+    </form>
+</div>
